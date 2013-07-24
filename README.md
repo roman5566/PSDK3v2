@@ -1,53 +1,41 @@
 PSDK3 v2
-========
+Based on the work of Estwald, Marioga and other sceners and in bookstores as PSL1GHT, Tiny3D and PS3 SoundLib, PSDK3 intended to be a stable environment in PS3 homebrew programming under Windows, without external influences that threaten the integrity of the libraries, or applications that are built with them, when someone decides to change everything, breaking compatibility with applications built with those libraries and causing a clear prejudice. 
+Here the motto is "if something works, do not touch" and you can add things, but not subtract, or fiddling with the code
 
-Based on the work of Estwald, Marioga and other sceners and bookstores as PSL1GHT, Tiny3D and PS3 SoundLib, aims to be an environment PSDK3
-stable on PS3 homebrew programming under Windows, without external influences that threaten the integrity of the bookstores, or the
-applications that are built with them, when someone decides to change everything, breaking compatibility with applications created
-with such a clear bookstores and causing injury. Here the motto is "if something works, do not touch" and can add things, but not
-subtract, or fiddling pijoteramente the code.
+What to do:
 
-What you have to do:
+Download the ZIP (click on the download button).
 
-- Download the ZIP (on the button).
+Create in folder in the root of drive "C:" called "PSDK3v2" and unzip into the content (can be installed on other drives or directories * Make changing files. Bat, if you prefer, a posteriori)
 
-- Create in root C: folder called "PSDK3v2" and unzip the content (can be installed on other drives or directories
-- changing Make files *. bat, if you prefer
+MinGW.7z Extract the file (I use IZArc) and have the folder "MinGW" with the environment to Make, etc.
 
-- Extract the file MinGW.7z (I use IZArc) and You'll have the folder "MinGW" with the environment to Make, etc.
+In PSDK3v2 \ MinGW \ msys \ 1.0 \ etc edit the file "profile" and at the end, where it says "export PS3SDK =" / c/PSDK3v2 "" changes the route you are going to use, if you want to launch the console (msys . bat) with the required environment variables.
 
-- In PSDK3v2 \ MinGW \ msys \ 1.0 \ etc edit the file "profile" and at the end, where it says "export PS3SDK =" / c/PSDK3v2 ""
-change the route you are going to use, if you want to launch the console (msys.bat) with environment variables
-necessary.
-
-- Extract ps3dev.7z and You'll have the folder "ps3dev" with PS3 compilers, and compiled the necessary bookshops
-and utilities
+Extract ps3dev.7z and have the folder "ps3dev" with PS3 compilers, and compiled the necessary libraries and utilities
 
 What has the project:
 
-- MinGW: environment MinGW / MSYS installed specifically to work with the PS3 tools.
+MinGW: environment MinGW / MSYS installed specifically to work with the PS3 tools.
 
-- Ps3dev: contains compilers, compiled external bookstores and other support tools such as scetool
-to sign applications (in replacement of geohot), create packages, as well as some necessary DLL.
+ps3dev: contains compilers, compiled external libraries and other supporting tools like scetool to sign applications (in replacement of geohot), create packages and some required DLL.
 
-- Psl1ght: contains the library already compiled psl1ght
+psl1ght: contains the library already compiled psl1ght
 
-- Libraries-src: contains the source codes PSL1GHT, Tiny3D and PS3 SoundLib
+libraries-src: contains the source code of PSL1GHT, Tiny3D and PS3 SoundLib
 
-- Project: contains the source codes and examples files. Bat to create the executables
+project: contains the source code of the examples and files. bat to create the executables
 
 Changing the installation path from C: to another
--------------------------------------------------
 
 Apart from the changes mentioned above in / etc / profile (SoloFor the console), if you edit the Make *. Bat and change:
 
-set PS3SDK = / F/PSDK3v2
-set WIN_PS3SDK = F :/ PSDK3v2
+September PS3SDK = / F/PSDK3v2 September WIN_PS3SDK = F :/ PSDK3v2
 
-the path that you, enough..
+by the corresponding path will suffice.
 
-compiling the source on windows
-----------
+how to compile the source code
+--------------------------------
 
 Make_clean.bat -> Delete all compiled files, except the. Pkg
 
