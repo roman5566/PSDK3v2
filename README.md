@@ -46,7 +46,7 @@ set WIN_PS3SDK = F :/ PSDK3v2
 
 the path that you, enough..
 
-compiling
+compiling the source on windows
 ----------
 
 Make_clean.bat -> Delete all compiled files, except the. Pkg
